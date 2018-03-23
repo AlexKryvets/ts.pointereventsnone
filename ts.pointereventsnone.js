@@ -6,12 +6,17 @@
         var events = ['click', 'mousedown', 'mousemove', 'mouseup', 'touchstart', 'touchmove', 'touchend'];
         return {
             restrict: 'A',
+            scope: {
+                pointerEventsNoneOff: '=',
+            },
             link: function (scope, element, attr) {
                 element.bind(events.join(' '), function (e) {
-                    if (attr.pointerEventsNone === 'preventDefault') {
-                        e.preventDefault();
-                    } else {
-                        e.stopPropagation();
+                    if (!scope.pointerEventsNoneOff) {
+                        if (attr.pointerEventsNone === 'preventDefault') {
+                            e.preventDefault();
+                        } else {
+                            e.stopPropagation();
+                        }
                     }
                 });
             }
