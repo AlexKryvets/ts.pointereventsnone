@@ -1,11 +1,11 @@
 {
   "name": "ts.pointereventsnone",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "",
   "main": "ts.pointereventsnone.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "make:patch": "unleash --patch --no-publish && npm run build && npm publish dist"
+    "make:patch": "unleash --patch"
   },
   "repository": {
     "type": "git",
