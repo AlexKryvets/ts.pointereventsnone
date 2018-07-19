@@ -1,6 +1,6 @@
 {
-  "name": "ts.pointereventsnone",
-  "version": "0.0.12",
+  "name": "@teamsoft/pointer-events-none",
+  "version": "0.0.13",
   "description": "",
   "main": "ts.pointereventsnone.js",
   "scripts": {
