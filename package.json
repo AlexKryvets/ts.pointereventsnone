@@ -1,10 +1,11 @@
 {
   "name": "ts.pointereventsnone",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "",
   "main": "ts.pointereventsnone.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "make:patch": "unleash --patch --no-publish && npm run build && npm publish dist"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/AlexKryvets/ts.pointereventsnone/issues"
   },
-  "homepage": "https://github.com/AlexKryvets/ts.pointereventsnone#readme"
+  "homepage": "https://github.com/AlexKryvets/ts.pointereventsnone#readme",
+  "devDependencies": {
+    "unleash": "^2.0.1"
+  }
 }
